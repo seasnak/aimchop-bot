@@ -1,0 +1,6 @@
+token = ""
+secret = ""
+
+extensions = [
+    "hello",
+]
