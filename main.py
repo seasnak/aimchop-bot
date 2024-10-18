@@ -4,6 +4,7 @@ import sys
 import discord
 from discord.ext import tasks, commands
 
+import config
 sys.path.insert(0, 'cogs/')
 from cogs import *
 
@@ -35,7 +36,7 @@ class AImchopBot(commands.Bot):
 # initialize bot instance
 bot = AImchopBot(command_prefix='!')
 
-@bot.commmand() # load extension <ext>
+@bot.command() # load extension <ext>
 async def load(ctx, ext):
     if ext in config.extensions:
         print(f"Extension \'{ext}\' is already loaded.")
